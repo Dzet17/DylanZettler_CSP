@@ -14,7 +14,7 @@
 		7860130F1FA21FB500326F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7860130D1FA21FB500326F34 /* LaunchScreen.storyboard */; };
 		7860131A1FA21FB500326F34 /* DylanZettler_CSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013191FA21FB500326F34 /* DylanZettler_CSPTests.swift */; };
 		786013251FA21FB500326F34 /* DylanZettler_CSPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013241FA21FB500326F34 /* DylanZettler_CSPUITests.swift */; };
-		786013371FA220D300326F34 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 786013361FA220D300326F34 /* Default-568h@2x.png */; };
+		786013391FA222A100326F34 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 786013381FA222A100326F34 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		786013201FA21FB500326F34 /* DylanZettler_CSPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DylanZettler_CSPUITests.xctest; path = "/Users/dzet4165/Documents/SwiftProjects/DylanZettler_CSP/build/Debug-iphoneos/DylanZettler_CSPUITests.xctest"; sourceTree = "<absolute>"; };
 		786013241FA21FB500326F34 /* DylanZettler_CSPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylanZettler_CSPUITests.swift; sourceTree = "<group>"; };
 		786013261FA21FB500326F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		786013361FA220D300326F34 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		786013381FA222A100326F34 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +79,10 @@
 		786012F81FA21FB500326F34 = {
 			isa = PBXGroup;
 			children = (
-				786013361FA220D300326F34 /* Default-568h@2x.png */,
 				786013321FA21FD100326F34 /* Controller */,
+				786013331FA21FD800326F34 /* Model */,
+				786013341FA21FDF00326F34 /* View */,
+				786013351FA21FE800326F34 /* Resources */,
 				786013181FA21FB500326F34 /* DylanZettler_CSPTests */,
 				786013231FA21FB500326F34 /* DylanZettler_CSPUITests */,
 			);
@@ -109,7 +111,6 @@
 			children = (
 				786013061FA21FB500326F34 /* ViewController.swift */,
 				786013041FA21FB500326F34 /* AppDelegate.swift */,
-				786013331FA21FD800326F34 /* Model */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,7 +118,6 @@
 		786013331FA21FD800326F34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				786013341FA21FDF00326F34 /* View */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,7 +127,7 @@
 			children = (
 				786013081FA21FB500326F34 /* Main.storyboard */,
 				7860130D1FA21FB500326F34 /* LaunchScreen.storyboard */,
-				786013351FA21FE800326F34 /* Resources */,
+				786013381FA222A100326F34 /* Default-568h@2x.png */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7860130F1FA21FB500326F34 /* LaunchScreen.storyboard in Resources */,
-				786013371FA220D300326F34 /* Default-568h@2x.png in Resources */,
+				786013391FA222A100326F34 /* Default-568h@2x.png in Resources */,
 				7860130C1FA21FB500326F34 /* Assets.xcassets in Resources */,
 				7860130A1FA21FB500326F34 /* Main.storyboard in Resources */,
 			);
