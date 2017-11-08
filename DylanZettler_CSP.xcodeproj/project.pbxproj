@@ -15,6 +15,13 @@
 		7860131A1FA21FB500326F34 /* DylanZettler_CSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013191FA21FB500326F34 /* DylanZettler_CSPTests.swift */; };
 		786013251FA21FB500326F34 /* DylanZettler_CSPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013241FA21FB500326F34 /* DylanZettler_CSPUITests.swift */; };
 		786013391FA222A100326F34 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 786013381FA222A100326F34 /* Default-568h@2x.png */; };
+		78E2123B1FB35A64005DE548 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123A1FB35A64005DE548 /* AlgorithmViewController.swift */; };
+		78E2123D1FB35A90005DE548 /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123C1FB35A90005DE548 /* GlobalImpactViewController.swift */; };
+		78E2123F1FB35AA1005DE548 /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123E1FB35AA1005DE548 /* ProgrammingViewController.swift */; };
+		78E212411FB35AAF005DE548 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212401FB35AAF005DE548 /* InternetViewController.swift */; };
+		78E212431FB35ABD005DE548 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212421FB35ABD005DE548 /* AbstractionViewController.swift */; };
+		78E212451FB35AD1005DE548 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212441FB35AD1005DE548 /* DataViewController.swift */; };
+		78E212471FB35AE2005DE548 /* CreativityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212461FB35AE2005DE548 /* CreativityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +42,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		786013011FA21FB500326F34 /* DylanZettler_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DylanZettler_CSP.app; path = "/Users/dzet4165/Documents/SwiftProjects/DylanZettler_CSP/build/Debug-iphoneos/DylanZettler_CSP.app"; sourceTree = "<absolute>"; };
 		786013041FA21FB500326F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786013061FA21FB500326F34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		786013091FA21FB500326F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7860130B1FA21FB500326F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7860130E1FA21FB500326F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786013101FA21FB500326F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		786013151FA21FB500326F34 /* DylanZettler_CSPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DylanZettler_CSPTests.xctest; path = "/Users/dzet4165/Documents/SwiftProjects/DylanZettler_CSP/build/Debug-iphoneos/DylanZettler_CSPTests.xctest"; sourceTree = "<absolute>"; };
 		786013191FA21FB500326F34 /* DylanZettler_CSPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylanZettler_CSPTests.swift; sourceTree = "<group>"; };
 		7860131B1FA21FB500326F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		786013201FA21FB500326F34 /* DylanZettler_CSPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DylanZettler_CSPUITests.xctest; path = "/Users/dzet4165/Documents/SwiftProjects/DylanZettler_CSP/build/Debug-iphoneos/DylanZettler_CSPUITests.xctest"; sourceTree = "<absolute>"; };
 		786013241FA21FB500326F34 /* DylanZettler_CSPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylanZettler_CSPUITests.swift; sourceTree = "<group>"; };
 		786013261FA21FB500326F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786013381FA222A100326F34 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		78E212291FB3572C005DE548 /* DylanZettler_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DylanZettler_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E2122A1FB3572C005DE548 /* DylanZettler_CSPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DylanZettler_CSPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E2122B1FB3572C005DE548 /* DylanZettler_CSPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DylanZettler_CSPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E2123A1FB35A64005DE548 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
+		78E2123C1FB35A90005DE548 /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
+		78E2123E1FB35AA1005DE548 /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
+		78E212401FB35AAF005DE548 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		78E212421FB35ABD005DE548 /* AbstractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
+		78E212441FB35AD1005DE548 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		78E212461FB35AE2005DE548 /* CreativityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,9 @@
 				786013351FA21FE800326F34 /* Resources */,
 				786013181FA21FB500326F34 /* DylanZettler_CSPTests */,
 				786013231FA21FB500326F34 /* DylanZettler_CSPUITests */,
+				78E212291FB3572C005DE548 /* DylanZettler_CSP.app */,
+				78E2122A1FB3572C005DE548 /* DylanZettler_CSPTests.xctest */,
+				78E2122B1FB3572C005DE548 /* DylanZettler_CSPUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +128,13 @@
 			children = (
 				786013061FA21FB500326F34 /* ViewController.swift */,
 				786013041FA21FB500326F34 /* AppDelegate.swift */,
+				78E212461FB35AE2005DE548 /* CreativityViewController.swift */,
+				78E212441FB35AD1005DE548 /* DataViewController.swift */,
+				78E212421FB35ABD005DE548 /* AbstractionViewController.swift */,
+				78E2123A1FB35A64005DE548 /* AlgorithmViewController.swift */,
+				78E2123C1FB35A90005DE548 /* GlobalImpactViewController.swift */,
+				78E2123E1FB35AA1005DE548 /* ProgrammingViewController.swift */,
+				78E212401FB35AAF005DE548 /* InternetViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,7 +182,7 @@
 			);
 			name = DylanZettler_CSP;
 			productName = DylanZettler_CSP;
-			productReference = 786013011FA21FB500326F34 /* DylanZettler_CSP.app */;
+			productReference = 78E212291FB3572C005DE548 /* DylanZettler_CSP.app */;
 			productType = "com.apple.product-type.application";
 		};
 		786013141FA21FB500326F34 /* DylanZettler_CSPTests */ = {
@@ -176,7 +200,7 @@
 			);
 			name = DylanZettler_CSPTests;
 			productName = DylanZettler_CSPTests;
-			productReference = 786013151FA21FB500326F34 /* DylanZettler_CSPTests.xctest */;
+			productReference = 78E2122A1FB3572C005DE548 /* DylanZettler_CSPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		7860131F1FA21FB500326F34 /* DylanZettler_CSPUITests */ = {
@@ -194,7 +218,7 @@
 			);
 			name = DylanZettler_CSPUITests;
 			productName = DylanZettler_CSPUITests;
-			productReference = 786013201FA21FB500326F34 /* DylanZettler_CSPUITests.xctest */;
+			productReference = 78E2122B1FB3572C005DE548 /* DylanZettler_CSPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -276,8 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E212411FB35AAF005DE548 /* InternetViewController.swift in Sources */,
+				78E212451FB35AD1005DE548 /* DataViewController.swift in Sources */,
+				78E2123B1FB35A64005DE548 /* AlgorithmViewController.swift in Sources */,
+				78E2123F1FB35AA1005DE548 /* ProgrammingViewController.swift in Sources */,
 				786013071FA21FB500326F34 /* ViewController.swift in Sources */,
 				786013051FA21FB500326F34 /* AppDelegate.swift in Sources */,
+				78E2123D1FB35A90005DE548 /* GlobalImpactViewController.swift in Sources */,
+				78E212431FB35ABD005DE548 /* AbstractionViewController.swift in Sources */,
+				78E212471FB35AE2005DE548 /* CreativityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
