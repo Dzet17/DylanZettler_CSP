@@ -8,6 +8,6 @@
 
 import UIKit
 
-class GlobalImpactViewController: NSObject {
-
+class GlobalImpactViewController: NSObject{
 }
+
