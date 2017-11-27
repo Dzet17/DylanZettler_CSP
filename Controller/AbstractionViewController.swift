@@ -91,5 +91,17 @@ class AbstractionViewController: UIPageViewController, UIPageViewControllerDataS
 
     public func presentationCount(for pageViewController: UIPageViewController) -> Int
     {
-        guard let firstViewController = viewControllers?.first
+        return orderedAbstractionViews.count
+    }
+    
+    public func presentationIndex(for pageViewController: UIPageViewController) -> Int
+    {
+        guard let firstViewController = viewControllers?.first, let firstViewControllerIndex = orderedAbstractionViews.index(of: firstViewController)
+        else
+        {
+            return 0
+        }
+        
+        return firstViewControllerIndex
+    }
 }
