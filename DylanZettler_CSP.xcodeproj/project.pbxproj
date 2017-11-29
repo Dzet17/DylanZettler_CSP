@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		781CE9D91FCEFFDF00BACA8A /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CE9D81FCEFFDF00BACA8A /* InternetDetailViewController.swift */; };
+		781CE9DB1FCEFFF800BACA8A /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CE9DA1FCEFFF800BACA8A /* InternetMasterViewController.swift */; };
+		781CE9DE1FCF0B3500BACA8A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781CE9DD1FCF0B3500BACA8A /* WebKit.framework */; };
 		786013051FA21FB500326F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013041FA21FB500326F34 /* AppDelegate.swift */; };
 		786013071FA21FB500326F34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013061FA21FB500326F34 /* ViewController.swift */; };
 		7860130A1FA21FB500326F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786013081FA21FB500326F34 /* Main.storyboard */; };
@@ -18,7 +21,6 @@
 		78E2123B1FB35A64005DE548 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123A1FB35A64005DE548 /* AlgorithmViewController.swift */; };
 		78E2123D1FB35A90005DE548 /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123C1FB35A90005DE548 /* GlobalImpactViewController.swift */; };
 		78E2123F1FB35AA1005DE548 /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123E1FB35AA1005DE548 /* ProgrammingViewController.swift */; };
-		78E212411FB35AAF005DE548 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212401FB35AAF005DE548 /* InternetViewController.swift */; };
 		78E212431FB35ABD005DE548 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212421FB35ABD005DE548 /* AbstractionViewController.swift */; };
 		78E212451FB35AD1005DE548 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212441FB35AD1005DE548 /* DataViewController.swift */; };
 		78E212471FB35AE2005DE548 /* CreativityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212461FB35AE2005DE548 /* CreativityViewController.swift */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		781CE9D81FCEFFDF00BACA8A /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		781CE9DA1FCEFFF800BACA8A /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
+		781CE9DD1FCF0B3500BACA8A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		786013041FA21FB500326F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786013061FA21FB500326F34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		786013091FA21FB500326F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +64,6 @@
 		78E2123A1FB35A64005DE548 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
 		78E2123C1FB35A90005DE548 /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		78E2123E1FB35AA1005DE548 /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
-		78E212401FB35AAF005DE548 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
 		78E212421FB35ABD005DE548 /* AbstractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
 		78E212441FB35AD1005DE548 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		78E212461FB35AE2005DE548 /* CreativityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				781CE9DE1FCF0B3500BACA8A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781CE9DC1FCF0B3400BACA8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				781CE9DD1FCF0B3500BACA8A /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		786012F81FA21FB500326F34 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 				78E212291FB3572C005DE548 /* DylanZettler_CSP.app */,
 				78E2122A1FB3572C005DE548 /* DylanZettler_CSPTests.xctest */,
 				78E2122B1FB3572C005DE548 /* DylanZettler_CSPUITests.xctest */,
+				781CE9DC1FCF0B3400BACA8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,7 +148,8 @@
 				78E2123A1FB35A64005DE548 /* AlgorithmViewController.swift */,
 				78E2123C1FB35A90005DE548 /* GlobalImpactViewController.swift */,
 				78E2123E1FB35AA1005DE548 /* ProgrammingViewController.swift */,
-				78E212401FB35AAF005DE548 /* InternetViewController.swift */,
+				781CE9DA1FCEFFF800BACA8A /* InternetMasterViewController.swift */,
+				781CE9D81FCEFFDF00BACA8A /* InternetDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,14 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78E212411FB35AAF005DE548 /* InternetViewController.swift in Sources */,
 				78E212451FB35AD1005DE548 /* DataViewController.swift in Sources */,
+				781CE9DB1FCEFFF800BACA8A /* InternetMasterViewController.swift in Sources */,
 				78E2123B1FB35A64005DE548 /* AlgorithmViewController.swift in Sources */,
 				78E2123F1FB35AA1005DE548 /* ProgrammingViewController.swift in Sources */,
 				786013071FA21FB500326F34 /* ViewController.swift in Sources */,
 				786013051FA21FB500326F34 /* AppDelegate.swift in Sources */,
 				78E2123D1FB35A90005DE548 /* GlobalImpactViewController.swift in Sources */,
 				78E212431FB35ABD005DE548 /* AbstractionViewController.swift in Sources */,
+				781CE9D91FCEFFDF00BACA8A /* InternetDetailViewController.swift in Sources */,
 				78E212471FB35AE2005DE548 /* CreativityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
