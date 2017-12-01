@@ -140,8 +140,8 @@
 		786013321FA21FD100326F34 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				786013061FA21FB500326F34 /* ViewController.swift */,
 				786013041FA21FB500326F34 /* AppDelegate.swift */,
+				786013061FA21FB500326F34 /* ViewController.swift */,
 				78E212461FB35AE2005DE548 /* CreativityViewController.swift */,
 				78E212441FB35AD1005DE548 /* DataViewController.swift */,
 				78E212421FB35ABD005DE548 /* AbstractionViewController.swift */,
