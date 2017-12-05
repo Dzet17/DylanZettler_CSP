@@ -12,8 +12,9 @@ import WebKit
 public class InternetDetailViewController : UIViewController
 {
     //MARK: GUI Controls
+    
     @IBOutlet weak var webViewer: UIWebView!
-    @IBOutlet weak var UILabel: UILabel!
+    @IBOutlet weak var textView: UILabel!
     
     var detailAddress : String?
     {

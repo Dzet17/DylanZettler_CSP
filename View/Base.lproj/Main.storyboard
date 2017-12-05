@@ -23,15 +23,20 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-Nc-IPo">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <rect key="frame" x="164" y="84" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="M2z-Qy-CJM" kind="show" id="Lru-HP-kcA"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1H-yn-uZO" customClass="DrawingView" customModule="DylanZettler_CSP" customModuleProvider="target">
+                                <rect key="frame" x="16" y="251" width="359" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwG-bS-kWj">
-                                <rect key="frame" x="164" y="398" width="46" height="30"/>
+                                <rect key="frame" x="164" y="188" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -108,27 +113,28 @@
                                 <rect key="frame" x="67" y="412" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Algorithm" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MS-Kx-pjd">
-                                <rect key="frame" x="139" y="237" width="97" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-aa-m0v">
+                                <rect key="frame" x="164" y="160" width="75" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="UIButton:" destination="Oja-G6-jbV" eventType="editingDidEnd" id="39X-S2-leu"/>
-                                </connections>
-                            </textField>
+                                <attributedString key="attributedText">
+                                    <fragment content="Algorithm">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Uga-gZ-E62"/>
                     </view>
                     <connections>
-                        <outlet property="AlgorithmsViewController" destination="5MS-Kx-pjd" id="nhQ-dL-1S2"/>
-                        <outlet property="UIButton" destination="5MS-Kx-pjd" id="dKK-0h-LUJ"/>
+                        <outlet property="algorithmText" destination="C0w-aa-m0v" id="cui-zj-9gi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Zh-LM-Zus" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Oja-G6-jbV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1177" y="161"/>
         </scene>
@@ -344,7 +350,7 @@
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSa-rb-G8W">
                                 <rect key="frame" x="16" y="318" width="343" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -353,13 +359,15 @@
                     <connections>
                         <outlet property="UILabel" destination="VDT-I9-h81" id="rLW-Ij-M5t"/>
                         <outlet property="WebView" destination="XSa-rb-G8W" id="lZk-K6-IgY"/>
+                        <outlet property="textView" destination="VDT-I9-h81" id="2VB-2k-83e"/>
+                        <outlet property="webViewer" destination="XSa-rb-G8W" id="Q0h-VP-Bjz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pvd-aa-rDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1004" y="2892.5037481259374"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Internet Samples-->
         <scene sceneID="GRr-V9-Hg8">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="Aqo-wK-vE5" customClass="InternetMasterViewController" customModule="DylanZettler_CSP" customModuleProvider="target" sceneMemberID="viewController">
@@ -367,14 +375,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="PIN-Rd-bcq">
+                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="iIR-hh-LMu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resuseIdentifier" id="iIR-hh-LMu">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iIR-hh-LMu" id="yy8-Fo-zqy">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="sEt-Jj-lZQ" kind="showDetail" id="z42-7w-tVk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -382,7 +398,7 @@
                             <outlet property="delegate" destination="Aqo-wK-vE5" id="UvI-9P-uTZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="k8k-oG-hUb"/>
+                    <navigationItem key="navigationItem" title="Internet Samples" id="k8k-oG-hUb"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhQ-Py-rXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -539,4 +555,7 @@
         <image name="Logic Gate" width="539" height="328"/>
         <image name="swiftSample" width="1248" height="1244"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jYt-Db-azU"/>
+    </inferredMetricsTieBreakers>
 </document>

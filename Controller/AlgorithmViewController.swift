@@ -11,10 +11,9 @@ import UIKit
 class AlgorithmViewController: UIViewController
 {
     // MARK:Data Members
-    @IBOutlet weak var AlgorithmsViewController: UITextField!
     
-    override public func viewDidLoad()
-
+    @IBOutlet weak var algorithmText: UILabel!
+    
     private func setupAlgorithm() -> Void
     {
         var algorithmSteps : [String] = []
@@ -33,17 +32,17 @@ class AlgorithmViewController: UIViewController
         //TODO Finsihing adding all steps to the algorithm
         algorithmSteps = [stepOne, stepTwo, stepThree]
         
-        let attributesDictionary = [NSAtrributedStringKey.font : algorithm.font]
-        let fullAttributedString  NSMutableAtrributedString(string: algorithm, attributes: attributesDictionary)
+        let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let fullAttributedString  NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
         
         for step in algorithmSteps
         {
-            let bullet :String = "Black Heart"
+            let bullet :String = "<3"
             let formattedStep :String = "\n\(bullet) \(step)"
-            let attributedStringStep : NSMutableAtrributedString = NSMutableAtrributedString(String: formattedStep)
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(String: formattedStep)
             let paragraphStyle = createParagraphStyle()
             
-            atributtedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0,attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0,attributedStringStep.length))
             
             fullAttributedString.append(attributedStringStep)
         }
@@ -51,16 +50,19 @@ class AlgorithmViewController: UIViewController
         algorithmText.attributedText = fullAttributedString
     }
     
-        private func createParagraphStyle() -> NSParagraphStyle = NSMutableParagraphStyle()
+    private func createParagraphStyle() -> NSParagraphStyle
+    {
+        let paragraphStyle = NSMutableParagraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .left
         paragraphStyle.defaultTabInterval = 15
-        paragraphStyle.firsteHeadIndent = 20
+        paragraphStyle.firstLineHeadIndent = 20
         paragraphStyle.headIndent = 35
-    
+        
         return paragraphStyle
     }
-
+    
     override public func viewDidLoad()
     {
         super.viewDidLoad()
+    }
 }

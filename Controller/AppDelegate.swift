@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         //MARK:- Master-Detail code
         if let splitViewController = window!.rootViewController as? UISplitViewController
         {
-            let navigationController = splitViewController.viewControllers[splitViewController.viewController.count - 1] as! UINavigationController
+            let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count - 1] as! UINavigationController
             
             navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
             splitViewController.delegate = self
