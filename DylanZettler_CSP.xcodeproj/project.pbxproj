@@ -23,6 +23,7 @@
 		78E212431FB35ABD005DE548 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212421FB35ABD005DE548 /* AbstractionViewController.swift */; };
 		78E212451FB35AD1005DE548 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212441FB35AD1005DE548 /* DataViewController.swift */; };
 		78E212471FB35AE2005DE548 /* CreativityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E212461FB35AE2005DE548 /* CreativityViewController.swift */; };
+		78E4919D1FD99C720098DA53 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E4919C1FD99C720098DA53 /* ArtCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		78E212421FB35ABD005DE548 /* AbstractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
 		78E212441FB35AD1005DE548 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		78E212461FB35AE2005DE548 /* CreativityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityViewController.swift; sourceTree = "<group>"; };
+		78E4919C1FD99C720098DA53 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				786013041FA21FB500326F34 /* AppDelegate.swift */,
+				78E4919C1FD99C720098DA53 /* ArtCell.swift */,
 				786013061FA21FB500326F34 /* ViewController.swift */,
 				78E212461FB35AE2005DE548 /* CreativityViewController.swift */,
 				78E212441FB35AD1005DE548 /* DataViewController.swift */,
@@ -321,6 +324,7 @@
 				781CE9D91FCEFFDF00BACA8A /* InternetDetailViewController.swift in Sources */,
 				785CF3161FD6F0750063CBCC /* DrawingView.swift in Sources */,
 				78E212471FB35AE2005DE548 /* CreativityViewController.swift in Sources */,
+				78E4919D1FD99C720098DA53 /* ArtCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
