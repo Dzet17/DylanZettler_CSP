@@ -49,7 +49,7 @@ class DrawingView: UIView
     public func drawHappyTree() -> Void
     {
         let bobRoss = UIBezierPath()
-        
+    
         bobRoss.move(to: CGPoint(x:80, y:50))
         bobRoss.addLine(to: CGPoint(x:120, y:150))
         bobRoss.addLine(to: CGPoint(x:40, y:150))
