@@ -13,7 +13,7 @@ public class InternetDetailViewController : UIViewController
 {
     //MARK: GUI Controls
     
-    @IBOutlet weak var webViewer: UIWebView!
+    @IBOutlet weak var webViewer: WKWebView!
     @IBOutlet weak var textView: UILabel!
     
     var detailAddress : String?
@@ -58,7 +58,7 @@ public class InternetDetailViewController : UIViewController
             if let currentWebView = webViewer
             {
                 let currentURL = URL(string: "https://www.cnn.com")
-                currentWebView.load(URLRequest(url: currentURL!)
+                currentWebView.load(URLRequest(url:currentURL!))
             }
         }
         

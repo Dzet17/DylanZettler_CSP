@@ -2,6 +2,7 @@
 //  CreativityViewController.swift
 //  DylanZettler_CSP
 //
+
 //  Created by Zettler, Dylan on 11/8/17.
 //  Copyright © 2017 CTEC. All rights reserved.
 //
@@ -73,10 +74,8 @@ public class CreativityViewController : UICollectionViewController, UICollection
     override public func collectionView(_ collectionView: UICollectionView,
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artCell = collectionView(_ collectionView: UICollectionView,
-                                     cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: resuseIdentifier, for: indexPath) as! ArtCell
+       
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
         
         artCell.backgroundColor = .purple
         artCell.imageView.image = artSelection[indexPath.row]
@@ -86,8 +85,8 @@ public class CreativityViewController : UICollectionViewController, UICollection
     }
         
         //MARK:-Delegate methods
-        
-        public func collectionView(_ collectionView: UICollectionView,
+    
+    public func collectionView(_ collectionView: UICollectionView,
                                layout collectionViewLayout: UICollectionViewLayout,
                                sizeForItemAt indexPath: IndexPath) -> CGSize {
             
@@ -107,7 +106,7 @@ public class CreativityViewController : UICollectionViewController, UICollection
             
             return CGSize(width: widthPerItem, height: widthPerItem)
         }
-        
+    
         override public func collectionView(_ collectionView: UICollectionView,
                                     shouldSelectItemAt indexPath: IndexPath) -> Bool
          {
@@ -121,8 +120,7 @@ public class CreativityViewController : UICollectionViewController, UICollection
             }
             
             return false
+        }
     }
-}
-
 
 

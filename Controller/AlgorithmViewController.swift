@@ -29,17 +29,18 @@ class AlgorithmViewController: UIViewController
         let stepSeven :String = "Seventh, right click on the new package and create two classes"
         let stepEight :String = "Eighth, in one of the packages, make a runner, in the other make a controller."
         let stepNine :String = "commit once again in GitHub"
+        
         //TODO Finsihing adding all steps to the algorithm
         algorithmSteps = [stepOne, stepTwo, stepThree]
         
         let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
-        let fullAttributedString  NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
+        let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
         
         for step in algorithmSteps
         {
             let bullet :String = "<3"
             let formattedStep :String = "\n\(bullet) \(step)"
-            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(String: formattedStep)
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let paragraphStyle = createParagraphStyle()
             
             attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0,attributedStringStep.length))
@@ -52,7 +53,7 @@ class AlgorithmViewController: UIViewController
     
     private func createParagraphStyle() -> NSParagraphStyle
     {
-        let paragraphStyle = NSMutableParagraphStyle = NSMutableParagraphStyle()
+        let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .left
         paragraphStyle.defaultTabInterval = 15
         paragraphStyle.firstLineHeadIndent = 20

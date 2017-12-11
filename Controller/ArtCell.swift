@@ -13,6 +13,6 @@ public class ArtCell: UICollectionViewCell
 
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var labelView: UILabel!
+    @IBOutlet weak var imageName: UILabel!
 
 }

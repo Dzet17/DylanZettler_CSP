@@ -90,10 +90,15 @@ public class InternetMasterViewController: UITableViewController
                 if indexPath.row == 0
                 {
                     //TODO Replace with your definitions - great time to use the """ operator
+                    pageText = "All the definitions you wrote....."
+                }
+                else
+                {
                     pageText = internetTopics[indexPath.row]
                 }
                 
                 let controller = segue.destination as! InternetDetailViewController
+                
                 controller.detailAddress = urlString
                 controller.detailText = pageText
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
