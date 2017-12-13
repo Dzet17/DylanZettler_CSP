@@ -27,7 +27,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="M2z-Qy-CJM" kind="show" id="Lru-HP-kcA"/>
+                                    <segue destination="Qvy-M9-wDa" kind="showDetail" id="6o9-0F-mJ6"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1H-yn-uZO" customClass="DrawingView" customModule="DylanZettler_CSP" customModuleProvider="target">
@@ -142,7 +142,7 @@
         <scene sceneID="v0e-0h-3cd">
             <objects>
                 <viewController title="Programming" id="Qvy-M9-wDa" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DiD-JK-Yeb">
+                    <view key="view" contentMode="scaleToFill" id="DiD-JK-Yeb" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOq-04-DOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2537" y="834"/>
+            <point key="canvasLocation" x="2536.8000000000002" y="833.43328335832086"/>
         </scene>
         <!--The Internet-->
         <scene sceneID="i5M-9P-oOU">

@@ -35,6 +35,17 @@ public class Player: SKSpriteNode
         let texture = SKTexture(imageNamed: "x wing1")
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
         
+        self.physicsBody = SKPhysicsBody(texture: self.texture!,size:self.size)
+        self.physicsBody?.isDynamic = true
+        self.physicsBody?.usesPreciseCollisionDetection = false
+        self.physicsBody?.categoryTestBitMask = CollisionCategories.Player
+        self.physicsBody?.contactTestBitMask = CollisionCategories.InvaderBullet | CollisionCategories.Invader
+        self.physicsBody?.collisionBitMask = CollisionCategories.EdgeBody
+        self.physicsBody?.allowsRotation = false
+        animate()
+        
+        
+        
     }
     
     required public init?(coder aDecoder: NSCoder)
