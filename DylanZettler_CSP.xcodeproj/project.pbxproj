@@ -17,6 +17,11 @@
 		7860130C1FA21FB500326F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7860130B1FA21FB500326F34 /* Assets.xcassets */; };
 		7860131A1FA21FB500326F34 /* DylanZettler_CSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013191FA21FB500326F34 /* DylanZettler_CSPTests.swift */; };
 		786013251FA21FB500326F34 /* DylanZettler_CSPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013241FA21FB500326F34 /* DylanZettler_CSPUITests.swift */; };
+		7896B7331FE173F6004F494F /* GameController in Resources */ = {isa = PBXBuildFile; fileRef = 7896B7321FE173F6004F494F /* GameController */; };
+		7896B7351FE174CB004F494F /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 7896B7341FE174CB004F494F /* Sounds */; };
+		7896B7371FE176D4004F494F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7896B7361FE176D4004F494F /* Utilities.swift */; };
+		7896B7391FE176F8004F494F /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7896B7381FE176F8004F494F /* StarField.sks */; };
+		7896B73B1FE178C7004F494F /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 7896B73A1FE178C7004F494F /* Model */; };
 		78E2123B1FB35A64005DE548 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123A1FB35A64005DE548 /* AlgorithmViewController.swift */; };
 		78E2123D1FB35A90005DE548 /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123C1FB35A90005DE548 /* GlobalImpactViewController.swift */; };
 		78E2123F1FB35AA1005DE548 /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2123E1FB35AA1005DE548 /* ProgrammingViewController.swift */; };
@@ -57,6 +62,11 @@
 		7860131B1FA21FB500326F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786013241FA21FB500326F34 /* DylanZettler_CSPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylanZettler_CSPUITests.swift; sourceTree = "<group>"; };
 		786013261FA21FB500326F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7896B7321FE173F6004F494F /* GameController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GameController; sourceTree = "<group>"; };
+		7896B7341FE174CB004F494F /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		7896B7361FE176D4004F494F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7896B7381FE176F8004F494F /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
+		7896B73A1FE178C7004F494F /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 		78E212291FB3572C005DE548 /* DylanZettler_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DylanZettler_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E2122A1FB3572C005DE548 /* DylanZettler_CSPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DylanZettler_CSPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E2122B1FB3572C005DE548 /* DylanZettler_CSPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DylanZettler_CSPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +150,7 @@
 		786013321FA21FD100326F34 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7896B7321FE173F6004F494F /* GameController */,
 				786013041FA21FB500326F34 /* AppDelegate.swift */,
 				78E4919C1FD99C720098DA53 /* ArtCell.swift */,
 				786013061FA21FB500326F34 /* ViewController.swift */,
@@ -158,6 +169,7 @@
 		786013331FA21FD800326F34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7896B73A1FE178C7004F494F /* Model */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +177,7 @@
 		786013341FA21FDF00326F34 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7896B7381FE176F8004F494F /* StarField.sks */,
 				786013081FA21FB500326F34 /* Main.storyboard */,
 				785CF3151FD6F0750063CBCC /* DrawingView.swift */,
 			);
@@ -174,6 +187,8 @@
 		786013351FA21FE800326F34 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7896B7361FE176D4004F494F /* Utilities.swift */,
+				7896B7341FE174CB004F494F /* Sounds */,
 				786013101FA21FB500326F34 /* Info.plist */,
 				7860130B1FA21FB500326F34 /* Assets.xcassets */,
 			);
@@ -287,8 +302,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7896B73B1FE178C7004F494F /* Model in Resources */,
 				7860130C1FA21FB500326F34 /* Assets.xcassets in Resources */,
 				7860130A1FA21FB500326F34 /* Main.storyboard in Resources */,
+				7896B7391FE176F8004F494F /* StarField.sks in Resources */,
+				7896B7351FE174CB004F494F /* Sounds in Resources */,
+				7896B7331FE173F6004F494F /* GameController in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +336,7 @@
 				781CE9DB1FCEFFF800BACA8A /* InternetMasterViewController.swift in Sources */,
 				78E2123B1FB35A64005DE548 /* AlgorithmViewController.swift in Sources */,
 				78E2123F1FB35AA1005DE548 /* ProgrammingViewController.swift in Sources */,
+				7896B7371FE176D4004F494F /* Utilities.swift in Sources */,
 				786013071FA21FB500326F34 /* ViewController.swift in Sources */,
 				786013051FA21FB500326F34 /* AppDelegate.swift in Sources */,
 				78E2123D1FB35A90005DE548 /* GlobalImpactViewController.swift in Sources */,
