@@ -14,7 +14,6 @@ public class Invader: SKSpriteNode
     var invaderRow : Int = 0
     var invaderCol : Int = 0
  
-    
     //MARK: - Initializers
     public init()
     {

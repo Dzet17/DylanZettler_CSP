@@ -58,6 +58,8 @@
 		781CE9D81FCEFFDF00BACA8A /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		781CE9DA1FCEFFF800BACA8A /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		781CE9DD1FCF0B3500BACA8A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		785B0B481FE414FD000792ED /* DylanZettler_CSPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DylanZettler_CSPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		785B0B491FE414FD000792ED /* DylanZettler_CSPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DylanZettler_CSPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		785CF3151FD6F0750063CBCC /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		786013041FA21FB500326F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786013061FA21FB500326F34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,8 +82,6 @@
 		7896B7461FE188AC004F494F /* PlayerLaser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLaser.swift; sourceTree = "<group>"; };
 		7896B7471FE188AC004F494F /* Invader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invader.swift; sourceTree = "<group>"; };
 		78E212291FB3572C005DE548 /* DylanZettler_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DylanZettler_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		78E2122A1FB3572C005DE548 /* DylanZettler_CSPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DylanZettler_CSPTests.xctest; path = "/Users/dzet4165/Documents/SwiftProjects/DylanZettler_CSP/build/Debug-iphoneos/DylanZettler_CSPTests.xctest"; sourceTree = "<absolute>"; };
-		78E2122B1FB3572C005DE548 /* DylanZettler_CSPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DylanZettler_CSPUITests.xctest; path = "/Users/dzet4165/Documents/SwiftProjects/DylanZettler_CSP/build/Debug-iphoneos/DylanZettler_CSPUITests.xctest"; sourceTree = "<absolute>"; };
 		78E2123A1FB35A64005DE548 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
 		78E2123C1FB35A90005DE548 /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		78E2123E1FB35AA1005DE548 /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +136,8 @@
 				786013231FA21FB500326F34 /* DylanZettler_CSPUITests */,
 				78E212291FB3572C005DE548 /* DylanZettler_CSP.app */,
 				781CE9DC1FCF0B3400BACA8A /* Frameworks */,
+				785B0B481FE414FD000792ED /* DylanZettler_CSPTests.xctest */,
+				785B0B491FE414FD000792ED /* DylanZettler_CSPUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,7 +256,7 @@
 			);
 			name = DylanZettler_CSPTests;
 			productName = DylanZettler_CSPTests;
-			productReference = 78E2122A1FB3572C005DE548 /* DylanZettler_CSPTests.xctest */;
+			productReference = 785B0B481FE414FD000792ED /* DylanZettler_CSPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		7860131F1FA21FB500326F34 /* DylanZettler_CSPUITests */ = {
@@ -272,7 +274,7 @@
 			);
 			name = DylanZettler_CSPUITests;
 			productName = DylanZettler_CSPUITests;
-			productReference = 78E2122B1FB3572C005DE548 /* DylanZettler_CSPUITests.xctest */;
+			productReference = 785B0B491FE414FD000792ED /* DylanZettler_CSPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -533,6 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X77K8LBKTS;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.DylanZettler-CSP";
@@ -547,6 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X77K8LBKTS;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.DylanZettler-CSP";
