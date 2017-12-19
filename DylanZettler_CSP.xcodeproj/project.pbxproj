@@ -17,6 +17,7 @@
 		7860130C1FA21FB500326F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7860130B1FA21FB500326F34 /* Assets.xcassets */; };
 		7860131A1FA21FB500326F34 /* DylanZettler_CSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013191FA21FB500326F34 /* DylanZettler_CSPTests.swift */; };
 		786013251FA21FB500326F34 /* DylanZettler_CSPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786013241FA21FB500326F34 /* DylanZettler_CSPUITests.swift */; };
+		7861192B1FE9686F00D690F0 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861192A1FE9686F00D690F0 /* DeathScene.swift */; };
 		7896B7351FE174CB004F494F /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 7896B7341FE174CB004F494F /* Sounds */; };
 		7896B7371FE176D4004F494F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7896B7361FE176D4004F494F /* Utilities.swift */; };
 		7896B7391FE176F8004F494F /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7896B7381FE176F8004F494F /* StarField.sks */; };
@@ -70,6 +71,7 @@
 		7860131B1FA21FB500326F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786013241FA21FB500326F34 /* DylanZettler_CSPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylanZettler_CSPUITests.swift; sourceTree = "<group>"; };
 		786013261FA21FB500326F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7861192A1FE9686F00D690F0 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 		7896B7341FE174CB004F494F /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		7896B7361FE176D4004F494F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7896B7381FE176F8004F494F /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				7896B73C1FE181E5004F494F /* StartScene.swift */,
 				7896B73E1FE181E6004F494F /* LevelCompleteScene.swift */,
 				7896B73D1FE181E5004F494F /* GameScene.swift */,
+				7861192A1FE9686F00D690F0 /* DeathScene.swift */,
 			);
 			path = GameController;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				7896B74C1FE188AC004F494F /* Invader.swift in Sources */,
 				785CF3161FD6F0750063CBCC /* DrawingView.swift in Sources */,
 				7896B74A1FE188AC004F494F /* Player.swift in Sources */,
+				7861192B1FE9686F00D690F0 /* DeathScene.swift in Sources */,
 				78E212471FB35AE2005DE548 /* CreativityViewController.swift in Sources */,
 				78E4919D1FD99C720098DA53 /* ArtCell.swift in Sources */,
 			);
