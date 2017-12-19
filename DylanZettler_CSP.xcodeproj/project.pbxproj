@@ -216,9 +216,9 @@
 		7896B7421FE1835F004F494F /* GameController */ = {
 			isa = PBXGroup;
 			children = (
-				7896B73C1FE181E5004F494F /* StartScene.swift */,
-				7896B73E1FE181E6004F494F /* LevelCompleteScene.swift */,
 				7896B73D1FE181E5004F494F /* GameScene.swift */,
+				7896B73E1FE181E6004F494F /* LevelCompleteScene.swift */,
+				7896B73C1FE181E5004F494F /* StartScene.swift */,
 				7861192A1FE9686F00D690F0 /* DeathScene.swift */,
 			);
 			path = GameController;
