@@ -44,6 +44,6 @@ public class Invader: SKSpriteNode
         let moveBulletAction = SKAction.move(to:CGPoint(to:CGPoint(x:self.position.x,y: 0 - bullet.size.height), duration: 2.0)
         let removeBulletAction = SKAction.removeFromParent()
         bullet.run(SKAction.sequence([moveBulletAction, removeBulletAction]))
-        
+
     }
 }
